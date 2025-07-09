@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History - Barbershop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>History</h1>
+    <label for="historyDate">Select Date:</label>
+    <input type="date" id="historyDate" />
+    <button id="loadHistoryBtn">Load History</button>
+    <button id="exportCsvBtn" style="display:none;">Export as CSV</button>
+    <div id="historyList"></div>
+    <button id="backBtn">Back to Dashboard</button>
+  </div>
+
+  <script type="module" src="history.js"></script>
+</body>
+</html>

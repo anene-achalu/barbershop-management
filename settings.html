@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings - Barbershop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Settings (Admin Only)</h1>
+
+    <section>
+      <h2>Service Prices</h2>
+      <label>Hair Price: <input type="number" id="hairPrice" /></label><br />
+      <label>Beard Price: <input type="number" id="beardPrice" /></label><br />
+      <label>Shampoo Price: <input type="number" id="shampooPrice" /></label><br />
+      <label>Color Price: <input type="number" id="colorPrice" /></label><br />
+      <button id="savePricesBtn">Save Prices</button>
+      <p id="pricesStatus"></p>
+    </section>
+
+    <section>
+      <h2>Manage Workers</h2>
+      <input type="text" id="newWorkerName" placeholder="New worker name" />
+      <button id="addWorkerBtn">Add Worker</button>
+      <div id="workerList"></div>
+    </section>
+
+    <button id="backBtn">Back to Dashboard</button>
+  </div>
+
+  <script type="module" src="settings.js"></script>
+</body>
+</html>
